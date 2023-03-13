@@ -1,1 +1,1 @@
-console.log('initiate.')
+console.log('initiate.');
