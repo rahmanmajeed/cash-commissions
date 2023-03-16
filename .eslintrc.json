@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "es6": true
     },
     "extends": ["airbnb-base", "prettier"],
     "overrides": [
@@ -12,6 +13,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console":"off"
+        "no-console":"off",
+        "import/extensions": "never"
     }
 }

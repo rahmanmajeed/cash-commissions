@@ -1,3 +1,6 @@
 node_modules/
 .env
 .env.*
+coverage/
+yarn-error.log
+package-lock.json
