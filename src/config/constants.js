@@ -1,0 +1,5 @@
+export const CASH_IN_COMMISSION_RATE = 0.03;
+export const CASH_IN_MAX_COMMISSION_AMT = 5.0;
+export const CASH_OUT_DEFAULT_RATE = 0.3;
+export const CASH_OUT_LP_MIN_COMMISSION_AMT = 0.50;
+
