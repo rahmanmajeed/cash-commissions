@@ -1,3 +1,4 @@
+import { CASH_OUT_WEEK_LIMIT } from '../config/types.js';
 function User(userId) {
     this.userId = userId;
     this.weekRecords = [];

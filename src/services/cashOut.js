@@ -20,11 +20,11 @@ import {
  * @params {data}
  * @returns {commision}
  */
-export const calcCashOutCommission = (data) => {
+export const calcCashOutCommission = (data, users) => {
     const { user_type, ...rest } = data;
     switch (user_type) {
         case NATURAL_PERSON:
-            return cashOutCommissionNP(rest);
+            return cashOutCommissionNP(rest, users);
         case LEGAL_PERSON:
             return cashOutCommissionLP(rest);
         default:
@@ -56,9 +56,8 @@ export const cashOutCommissionLP = (data) => {
  * @params {data}
  * @returns {commision}
  */
-export const cashOutCommissionNP = (data) => {
+export const cashOutCommissionNP = (data, users) => {
     try {
-        const users = [];
         const { operation, user_id, date } = data;
         const user = getUser(users, user_id);
         const week = weekCount(date);
